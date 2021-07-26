@@ -750,7 +750,7 @@ footer {
     align-items: center;
   }
 
-  header > div > h1 {
+  header  {
     text-align: center;
   }
 
@@ -765,10 +765,12 @@ footer {
   .benefit-item {
     max-width: 270px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .partnership,
   .corroboration {
     justify-content: center;
+    text-align: center;
   }
   .iphone:first-of-type {
     margin-bottom: 80px;
@@ -810,6 +812,9 @@ footer {
   .container {
     max-width: 392px;
   }
+  .companies > .container {
+    flex-direction: column;
+  }
   .links-container {
     max-width: 298px;
   }
@@ -822,5 +827,39 @@ footer {
   }
   .rights-container {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    max-width: 292px;
+  }
+
+  header > img {
+    max-width: 300px;
+  }
+
+  .start-using-container > h2 {
+    font-size: 30px;
+  }
+
+  .title-buttons {
+    flex-direction: column;
+  }
+
+  .title-buttons > button {
+    margin-bottom: 16px;
+  }
+
+  input.montserrat-default-paragraph {
+    padding: 10px;
+  }
+
+  .start-using-container > button {
+    margin-bottom: 20px;
+  }
+
+  .shell > .container > img:last-of-type {
+    max-width: 283px;
   }
 }
